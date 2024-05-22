@@ -318,3 +318,6 @@ netinfo ()
 #Autojump
 
 #. /usr/share/autojump/autojump.sh
+
+
+alias dnshiz='dnseval -t A -f serverList.txt -c10 google.com'

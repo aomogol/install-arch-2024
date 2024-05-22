@@ -22,7 +22,7 @@ sudo usermod -aG users,power,lp,adm,audio,video,optical,storage,network,rfkill $
     echo "###############################################################################"
     echo
     tput sgr0
-# sudo reflector --latest 10  --fastest 10 --sort rate --protocol http,https --save /etc/pacman.d/mirrorlist
+sudo reflector --latest 10  --fastest 10 --sort rate --protocol http,https --save /etc/pacman.d/mirrorlist
 
 # rate- mirrors
 # export TMPFILE="$(mktemp)"; \
