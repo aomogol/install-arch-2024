@@ -55,7 +55,6 @@ echo -e "${NONE}"
 #
 packages=(
     base-devel
-    linux-headers
     git
     wget
     curl
