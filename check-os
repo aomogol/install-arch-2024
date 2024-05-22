@@ -15,7 +15,8 @@ install_linux_headers() {
         echo "linux-headers is already installed."
     else
         echo "Installing linux-headers for kernel version $kernel_base_version"
-        yay -S --noconfirm --needed "linux-headers"
+        #yay -S --noconfirm --needed "linux-headers"
+        echo $kernel_base_version
     fi
 }
 
