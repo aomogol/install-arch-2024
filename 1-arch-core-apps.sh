@@ -28,7 +28,7 @@ echo ""
 # ------------------------------------------------------
 # Pacman.conf file
 # ------------------------------------------------------
-echo "########## /etc/pacman.conf >>  color - paralel download"
+echo "########## /etc/pacman.conf >>  color & paralel download"
 # sudo nano /etc/pacman.conf
 echo "Pacman parallel downloads set to 20"
 	FIND="#ParallelDownloads = 5"
