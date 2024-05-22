@@ -92,6 +92,11 @@ packages=(
     dolphin-plugins
     unzip
     p7zip
+    ffmpegthumbs
+    kimageformats
+    kdegraphics-thumbnailers
+    poppler-glib
+    gdk-pixbuf2
 
     ttf-meslo-nerd
     ttf-meslo-nerd-font-powerlevel10k
