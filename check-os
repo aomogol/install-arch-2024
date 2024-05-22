@@ -13,3 +13,7 @@ else
     kernel_type="linux"
 fi
 echo "Kernel type: $kernel_type"
+
+# Install Linux headers package
+sudo pacman -S "${kernel_type}-headers" --noconfirm --needed
+echo "Kernel type: $kernel_type"
