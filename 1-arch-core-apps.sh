@@ -59,7 +59,6 @@ packages=(
     git
     wget
     curl
-    meld
     neofetch
     fastfetch
 
@@ -67,6 +66,7 @@ packages=(
     gparted
     timeshift
     os-prober
+    ventoy-bin
 
     btop
     htop
@@ -89,6 +89,7 @@ packages=(
     mtools
     btrfs-progs
 
+    dolphin
     dolphin-plugins
     unzip
     p7zip
@@ -125,6 +126,7 @@ packages=(
     bind
     dnsdiag
     netplan
+    
 
     grub-customizer
     update-grub
@@ -147,6 +149,7 @@ packages=(
     zoxide
     fzf
     zsh
+    eza
 
     kdeconnect
 
@@ -156,6 +159,11 @@ packages=(
     downgrade
     caffeine-ng
 
+    visual-studio-code-bin 
+    sublime-text-4 
+    meld
+    github-cli 
+    github-desktop-bin
 )
 # ------------------------------------------------------
 # Install packages using yay
