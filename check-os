@@ -1,24 +1,15 @@
 #!/bin/bash
 
-# Function to check the installed Linux kernel and install the corresponding headers
-install_linux_headers() {
-    # Get the current Linux kernel version
-    kernel_version=$(uname -r)
-    echo "Current Linux kernel version: $kernel_version"
+# Get the current Linux kernel version
+kernel_version=$(uname -r)
+echo "Current Linux kernel version: $kernel_version"
 
-    # Extract the major and minor version (e.g., 5.10 from 5.10.16-arch1-1)
-    kernel_base_version=$(echo $kernel_version | cut -d '-' -f 1)
-    echo "Kernel base version: $kernel_base_version"
-
-    # Install the corresponding linux-headers package
-    if yay -Qi "linux-headers" &> /dev/null; then
-        echo "linux-headers is already installed."
-    else
-        echo "Installing linux-headers for kernel version $kernel_base_version"
-        #yay -S --noconfirm --needed "linux-headers"
-        echo $kernel_base_version
-    fi
-}
-
-# Call the function
-install_linux_headers
+# Determine the kernel type (e.g., linux, linux-zen, linux-lts)
+if [[ $kernel_version == *"zen"* ]]; then
+    kernel_type="linux-zen"
+elif [[ $kernel_version == *"lts"* ]]; then
+    kernel_type="linux-lts"
+else
+    kernel_type="linux"
+fi
+echo "Kernel type: $kernel_type"
