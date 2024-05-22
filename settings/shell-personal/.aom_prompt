@@ -1,0 +1,45 @@
+#
+# ~/.aom_prompt
+#
+#######################################################
+# Author    : Ahmet Önder Moğol
+#######################################################
+
+alias depo4="sudo mount -t cifs //192.168.1.85/aom /mnt/depo4 -o rw,file_mode=0777,dir_mode=0777,username=onder,password=Logom001,iocharset=utf8,vers=1.0"
+alias depo8c="sudo mount -t nfs -o vers=3 192.168.1.87:/aom /mnt/depo8c"
+alias depo8a="sudo mount -t nfs -o vers=3 192.168.1.87:/aomogol /mnt/depo8aomogol"
+alias depo8pub="sudo mount -t nfs -o vers=3 192.168.1.87:/public /mnt/depo8pub"
+alias depo8iso="sudo mount -t nfs -o vers=3 192.168.1.87:/iso /mnt/depo8iso"
+
+alias daomogol="sudo mount -t cifs //192.168.1.87/aomogol /mnt/depo8aomogol -o rw,file_mode=0777,dir_mode=0777,username=onder,password=Logom001,iocharset=utf8"
+
+alias dpublic="sudo mount -t cifs //192.168.1.87/public /mnt/depo8pub -o rw,file_mode=0777,dir_mode=0777,username=onder,password=Logom001,iocharset=utf8"
+
+alias daom="sudo mount -t cifs //192.168.1.87/aom /mnt/depo8c -o rw,file_mode=0777,dir_mode=0777,username=onder,password=Logom001,iocharset=utf8"
+
+alias diso="sudo mount -t cifs //192.168.1.87/iso /mnt/depo8iso -o rw,file_mode=0777,dir_mode=0777,username=onder,password=Logom001,iocharset=utf8"
+
+alias dproxmox="sudo mount -t cifs //192.168.1.87/proxmox /mnt/depo8proxmox -o rw,file_mode=0777,dir_mode=0777,username=onder,password=Logom001,iocharset=utf8"
+
+# _____________________________________________________________________________
+
+function d8 (){
+	sudo mount -t cifs //192.168.1.87/aomogol /mnt/depo8aomogol -o rw,file_mode=0777,dir_mode=0777,username=onder,password=Logom001,iocharset=utf8
+
+	sudo mount -t cifs //192.168.1.87/public /mnt/depo8pub -o rw,file_mode=0777,dir_mode=0777,username=onder,password=Logom001,iocharset=utf8
+
+	sudo mount -t cifs //192.168.1.87/aom /mnt/depo8c -o rw,file_mode=0777,dir_mode=0777,username=onder,password=Logom001,iocharset=utf8
+
+	sudo mount -t cifs //192.168.1.87/iso /mnt/depo8iso -o rw,file_mode=0777,dir_mode=0777,username=onder,password=Logom001,iocharset=utf8
+
+	sudo mount -t cifs //192.168.1.87/proxmox /mnt/depo8proxmox -o rw,file_mode=0777,dir_mode=0777,username=onder,password=Logom001,iocharset=utf8
+
+}
+# _____________________________________________________________________________
+
+alias oracle1="ssh -i /mnt/data/works/oracle/oracle-aomogol/ssh-key-2023-02-20.key ubuntu@152.70.184.101"
+alias oracle2="ssh -i /mnt/data/works/oracle/oracle-dijitalpusula/ssh.key ubuntu@141.144.255.211"
+
+alias dnshiz='dnseval -t A -f serverList.txt -c10 google.com'
+
+
