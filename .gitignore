@@ -1,1 +1,4 @@
+# git ignore files & directories
+.gitignore
+
 aom-special-scripts/*

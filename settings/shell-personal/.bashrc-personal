@@ -1,6 +1,7 @@
 #
 # ~/.bashrc
 #
+
 #######################################################
 # Author    : Ahmet Önder Moğol
 #######################################################
@@ -55,6 +56,7 @@ fi
 ### ALIASES ####
 
 # Alias's for multiple directory listing commands
+alias ls='ls --color=always'
 alias la='ls -Alh' # show hidden files
 alias ls='ls -aFh --color=always' # add colors and file type extensions
 alias lx='ls -lXBh' # sort by extension
@@ -124,6 +126,7 @@ alias fgrep='fgrep --color=auto'
 alias yup="yay -Syyu --noconfirm"
 alias u="yay -Syyu --noconfirm"
 alias n="neofetch"
+alias fa="fastfetch"
 alias cat="bat"
 
 #get the error messages from journalctl
@@ -213,7 +216,7 @@ alias po2="sudo ss -tulpn | grep LISTEN"
 alias sysctl="systemctl list-unit-files"
 alias sysfail="systemctl --state=failed --all"
 
-
+alias dmesg='dmesg --color=always'
 
 ## Functions _________________________________
 # # ex = EXtractor for all kinds of archives
@@ -302,6 +305,8 @@ netinfo ()
 }
 
 
+alias dnshiz='dnseval -t A -f serverList.txt -c10 google.com'
+alias inv='nano $(fzf -m --preview="bat --color=always {}")'
 
 ## Functions _________________________________
 
@@ -311,13 +316,17 @@ netinfo ()
 [[ -f ~/.aom_prompt ]] && . ~/.aom_prompt
 #source ~/.aom-prompt
 
-### STARSHIP install
-#eval "$(starship init bash)"
-#starship preset pastel-powerline -o ~/.config/starship.toml
 
 #Autojump
-
 #. /usr/share/autojump/autojump.sh
 
+### STARSHIP install
+eval "$(starship init bash)"
+starship preset pastel-powerline -o ~/.config/starship.toml
 
-alias dnshiz='dnseval -t A -f serverList.txt -c10 google.com'
+# Set up fzf key bindings and fuzzy completion
+eval "$(fzf --bash)"
+
+# Zoxide
+eval "$(zoxide init bash)"
+

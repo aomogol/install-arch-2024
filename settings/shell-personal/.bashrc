@@ -15,13 +15,6 @@ PS1='[\u@\h \W]\$ '
 
 [[ -f ~/.bashrc-personal ]] && . ~/.bashrc-personal
 
-### STARSHIP install
-eval "$(starship init bash)"
-starship preset pastel-powerline -o ~/.config/starship.toml
-
-
-
-
 
 
 

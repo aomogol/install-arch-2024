@@ -64,15 +64,25 @@ installed_dir=$(dirname $(readlink -f $(basename `pwd`)))
 	cp $installed_dir/settings/shell-personal/serverList.txt ~/serverList.txt
 
 
-	### Switch to ZSH
+#                                                       ### Switch to ZSH
 #sudo chsh $USER -s /bin/zsh
 #sudo usermod -s /bin/zsh $USER
 
 echo
 #echo "################### Personal settings to install - "
-#echo "Sublime text settings"
+
+echo "Sublime text settings"
 echo
+#The exact details of the symlink command will depend on the installation location. 
+    #Most default PATH environment variable values should contain /usr/local/bin, 
+        # so no further commands should be necessary.
+sudo ln -s /opt/sublime_text/sublime_text /usr/local/bin/subl
+
+## set your EDITOR environment variable:
+    # export EDITOR='subl -w'
+
+
 #[ -d $HOME"/.config/sublime-text/Packages/User" ] || mkdir -p $HOME"/.config/sublime-text/Packages/User"
 #cp  $installed_dir/settings/sublimetext/Preferences.sublime-settings $HOME/.config/sublime-text/Packages/User/Preferences.sublime-settings
-echo
+echo "Sublime text settings done"
 

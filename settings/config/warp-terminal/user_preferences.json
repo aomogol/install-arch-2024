@@ -1,0 +1,26 @@
+{
+  "prefs": {
+    "FontName": "\"MesloLGL Nerd Font\"",
+    "ChangelogVersions": "{\"v0.2024.06.25.08.02.stable_01\":true}",
+    "Theme": "\"Dracula\"",
+    "OverrideOpacity": "100",
+    "NotebookFontSize": "14.0",
+    "ReceivedReferralTheme": "\"Inactive\"",
+    "AIAssistantRequestLimitInfo": "{\"limit\":40,\"num_requests_used_since_refresh\":0,\"next_refresh_time\":\"2024-08-06T14:55:57.306412873Z\"}",
+    "AliasExpansionBannerSeen": "true",
+    "NewWindowsNumColumns": "160",
+    "HasAutoOpenedWelcomeFolder": "true",
+    "AIRequestLimitInfo": "{\"limit\":40,\"num_requests_used_since_refresh\":0,\"next_refresh_time\":\"2024-08-06T14:55:57.306412Z\"}",
+    "FontSize": "15.0",
+    "Spacing": "\"Normal\"",
+    "AgentModeOnboardingBlockShown": "true",
+    "ExperimentId": "7ae36af0-aabb-4cf2-9c89-6fa8e35ac1bf",
+    "TelemetryEnabled": "true",
+    "MatchNotebookToMonospaceFontSize": "true",
+    "CrashReportingEnabled": "true",
+    "WelcomeTipsFeaturesUsed": "[{\"Action\":\"ThemePicker\"},{\"Hint\":\"BlockSelect\"},{\"Hint\":\"CreateBlock\"},{\"Hint\":\"BlockAction\"},{\"Action\":\"OpenWarpDrive\"},{\"Action\":\"SplitPane\"}]",
+    "ShouldDimInactivePanes": "false",
+    "OpenWindowsAtCustomSize": "true",
+    "NewWindowsNumRows": "60"
+  }
+}
