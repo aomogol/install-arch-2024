@@ -27,19 +27,6 @@ iso
 .config/thorium/*/History Index *
 .config/thorium/*/Service Worker/CacheStorage
 
-# VS Code
-.config/Code - OSS/blob_storage/
-.config/Code - OSS/GPUCache/
-.config/Code/blob_storage/
-.config/Code/GPUCache/
-.config/Code/User/globalStorage
-.config/Code/CachedExtensionVSIXs
-
-# MS Teams
-.config/Microsoft/Microsoft Teams/Application Cache
-.config/Microsoft/Microsoft Teams/Cache
-.config/Microsoft/Microsoft Teams/GPUCache
-
 # ## ################################################
 
 ###############################################
@@ -47,9 +34,11 @@ iso
 # (uncomment the files you don't need)        #
 ###############################################
 
+
 .android
 .AndroidStudio*/
 Android/Sdk
+.pub-cache
 #.gradle
 #.gvm
 #.grails/
@@ -78,15 +67,15 @@ Android/Sdk
 #
 ## Add Game Folders here:
 #
-#/games
-#.local/share/Steam
-#.var/app/com.valvesoftware.Steam/.local/share/Steam
-#.steam
-#/Steam
-#.minecraft
-#.technic
-#.PlayOnLinux
-#.local/share/lutris/runners/wine/
+/games
+.local/share/Steam
+.var/app/com.valvesoftware.Steam/.local/share/Steam
+.steam
+/Steam
+.minecraft
+.technic
+.PlayOnLinux
+.local/share/lutris/runners/wine/
 #
 ## Spotify
 #.config/spotify/Users
@@ -406,9 +395,24 @@ nohup.out
 # VS Code
 .vscode-oss/extensions/*
 .vscode/extensions/*
+.config/Code - OSS/blob_storage/
+.config/Code - OSS/GPUCache/
 .config/Code - OSS/logs/
+.config/Code/blob_storage/
+.config/Code/GPUCache/
 .config/Code/logs/
 .config/Code/CachedData/*
+
+####################################
+###        aom Eklenenler
+.config/Code/User/globalStorage
+.config/Code/CachedExtensionVSIXs
+####################################
+
+# MS Teams
+.config/Microsoft/Microsoft Teams/Application Cache
+.config/Microsoft/Microsoft Teams/Cache
+.config/Microsoft/Microsoft Teams/GPUCache
 
 # VS Codium
 .config/VSCodium/CachedExtensionVSIXs
