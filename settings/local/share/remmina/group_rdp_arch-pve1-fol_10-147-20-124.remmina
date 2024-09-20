@@ -1,5 +1,9 @@
 [remmina]
+<<<<<<< HEAD
 password=
+=======
+password=.
+>>>>>>> fe181f71d9c4cd4a45dacd7418cc83e02d303f45
 gateway_username=
 notes_text=
 vc=
