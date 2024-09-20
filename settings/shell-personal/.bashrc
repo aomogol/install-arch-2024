@@ -15,13 +15,4 @@ PS1='[\u@\h \W]\$ '
 
 [[ -f ~/.bashrc-personal ]] && . ~/.bashrc-personal
 
-
-
-
-
-
-
-
-
-
-
+export PATH=$HOME/.local/bin:$PATH

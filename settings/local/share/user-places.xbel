@@ -22,7 +22,7 @@
     <bookmark:icon name="user-home"/>
    </metadata>
    <metadata owner="http://www.kde.org">
-    <ID>1719615046/0</ID>
+    <ID>1724518221/0</ID>
     <isSystemItem>true</isSystemItem>
    </metadata>
   </info>
@@ -34,7 +34,7 @@
     <bookmark:icon name="user-desktop"/>
    </metadata>
    <metadata owner="http://www.kde.org">
-    <ID>1719615046/1</ID>
+    <ID>1724518221/1</ID>
     <isSystemItem>true</isSystemItem>
    </metadata>
   </info>
@@ -46,7 +46,7 @@
     <bookmark:icon name="folder-documents"/>
    </metadata>
    <metadata owner="http://www.kde.org">
-    <ID>1719615046/2</ID>
+    <ID>1724518221/2</ID>
     <isSystemItem>true</isSystemItem>
    </metadata>
   </info>
@@ -58,7 +58,7 @@
     <bookmark:icon name="folder-downloads"/>
    </metadata>
    <metadata owner="http://www.kde.org">
-    <ID>1719615046/3</ID>
+    <ID>1724518221/3</ID>
     <isSystemItem>true</isSystemItem>
    </metadata>
   </info>
@@ -70,7 +70,7 @@
     <bookmark:icon name="folder-music"/>
    </metadata>
    <metadata owner="http://www.kde.org">
-    <ID>1719615046/6</ID>
+    <ID>1724518221/6</ID>
     <isSystemItem>true</isSystemItem>
    </metadata>
   </info>
@@ -82,7 +82,7 @@
     <bookmark:icon name="folder-pictures"/>
    </metadata>
    <metadata owner="http://www.kde.org">
-    <ID>1719615046/7</ID>
+    <ID>1724518221/7</ID>
     <isSystemItem>true</isSystemItem>
    </metadata>
   </info>
@@ -94,7 +94,7 @@
     <bookmark:icon name="folder-videos"/>
    </metadata>
    <metadata owner="http://www.kde.org">
-    <ID>1719615046/8</ID>
+    <ID>1724518221/8</ID>
     <isSystemItem>true</isSystemItem>
    </metadata>
   </info>
@@ -106,7 +106,7 @@
     <bookmark:icon name="folder-network"/>
    </metadata>
    <metadata owner="http://www.kde.org">
-    <ID>1719615046/4</ID>
+    <ID>1724518221/4</ID>
     <isSystemItem>true</isSystemItem>
    </metadata>
   </info>
@@ -118,7 +118,7 @@
     <bookmark:icon name="user-trash"/>
    </metadata>
    <metadata owner="http://www.kde.org">
-    <ID>1719615046/5</ID>
+    <ID>1724518221/5</ID>
     <isSystemItem>true</isSystemItem>
    </metadata>
   </info>
@@ -130,7 +130,95 @@
     <bookmark:icon name="inode-directory"/>
    </metadata>
    <metadata owner="http://www.kde.org">
-    <ID>1719927780/0</ID>
+    <ID>1724526884/0</ID>
+   </metadata>
+  </info>
+ </bookmark>
+ <bookmark href="file:///mnt/data/AOMogol">
+  <title>AOMogol</title>
+  <info>
+   <metadata owner="http://freedesktop.org">
+    <bookmark:icon name="inode-directory"/>
+   </metadata>
+   <metadata owner="http://www.kde.org">
+    <ID>1724526890/1</ID>
+   </metadata>
+  </info>
+ </bookmark>
+ <bookmark href="file:///mnt/data/FOL_data">
+  <title>FOL_data</title>
+  <info>
+   <metadata owner="http://freedesktop.org">
+    <bookmark:icon name="inode-directory"/>
+   </metadata>
+   <metadata owner="http://www.kde.org">
+    <ID>1724526925/8</ID>
+   </metadata>
+  </info>
+ </bookmark>
+ <bookmark href="file:///mnt/data/documents">
+  <title>documents</title>
+  <info>
+   <metadata owner="http://freedesktop.org">
+    <bookmark:icon name="inode-directory"/>
+   </metadata>
+   <metadata owner="http://www.kde.org">
+    <ID>1724526894/2</ID>
+   </metadata>
+  </info>
+ </bookmark>
+ <bookmark href="file:///mnt/data/downloads">
+  <title>downloads</title>
+  <info>
+   <metadata owner="http://freedesktop.org">
+    <bookmark:icon name="inode-directory"/>
+   </metadata>
+   <metadata owner="http://www.kde.org">
+    <ID>1724526896/3</ID>
+   </metadata>
+  </info>
+ </bookmark>
+ <bookmark href="file:///mnt/data/iso">
+  <title>iso</title>
+  <info>
+   <metadata owner="http://freedesktop.org">
+    <bookmark:icon name="inode-directory"/>
+   </metadata>
+   <metadata owner="http://www.kde.org">
+    <ID>1724526901/4</ID>
+   </metadata>
+  </info>
+ </bookmark>
+ <bookmark href="file:///mnt/data/projeler">
+  <title>projeler</title>
+  <info>
+   <metadata owner="http://freedesktop.org">
+    <bookmark:icon name="inode-directory"/>
+   </metadata>
+   <metadata owner="http://www.kde.org">
+    <ID>1724526905/5</ID>
+   </metadata>
+  </info>
+ </bookmark>
+ <bookmark href="file:///mnt/data/vmpool">
+  <title>vmpool</title>
+  <info>
+   <metadata owner="http://freedesktop.org">
+    <bookmark:icon name="inode-directory"/>
+   </metadata>
+   <metadata owner="http://www.kde.org">
+    <ID>1724526911/6</ID>
+   </metadata>
+  </info>
+ </bookmark>
+ <bookmark href="file:///mnt/data/works">
+  <title>works</title>
+  <info>
+   <metadata owner="http://freedesktop.org">
+    <bookmark:icon name="inode-directory"/>
+   </metadata>
+   <metadata owner="http://www.kde.org">
+    <ID>1724526914/7</ID>
    </metadata>
   </info>
  </bookmark>
@@ -141,7 +229,7 @@
     <bookmark:icon name="document-open-recent"/>
    </metadata>
    <metadata owner="http://www.kde.org">
-    <ID>1719615046/9</ID>
+    <ID>1724518221/9</ID>
     <isSystemItem>true</isSystemItem>
    </metadata>
   </info>
@@ -153,7 +241,7 @@
     <bookmark:icon name="folder-open-recent"/>
    </metadata>
    <metadata owner="http://www.kde.org">
-    <ID>1719615046/10</ID>
+    <ID>1724518221/10</ID>
     <isSystemItem>true</isSystemItem>
    </metadata>
   </info>
@@ -170,9 +258,9 @@
  <separator>
   <info>
    <metadata owner="http://www.kde.org">
-    <UDI>/org/freedesktop/UDisks2/block_devices/sda2</UDI>
+    <UDI>/org/freedesktop/UDisks2/block_devices/sda3</UDI>
     <isSystemItem>true</isSystemItem>
-    <uuid>7aeee5bceee570b5</uuid>
+    <uuid>d426d37726d35956</uuid>
    </metadata>
   </info>
  </separator>
@@ -181,85 +269,26 @@
    <metadata owner="http://www.kde.org">
     <UDI>/org/freedesktop/UDisks2/block_devices/nvme0n1p2</UDI>
     <isSystemItem>true</isSystemItem>
-    <uuid>880eae36-4b92-4902-9c5e-e86acf99964f</uuid>
+    <uuid>7b184c29-6f91-4c89-af80-da35d488ddb3</uuid>
    </metadata>
   </info>
  </separator>
- <bookmark href="file:///mnt/data/AOMogol">
-  <title>AOMogol</title>
+ <separator>
   <info>
-   <metadata owner="http://freedesktop.org">
-    <bookmark:icon name="inode-directory"/>
-   </metadata>
    <metadata owner="http://www.kde.org">
-    <ID>1719651148/0</ID>
+    <UDI>/org/freedesktop/UDisks2/block_devices/sdc1</UDI>
+    <isSystemItem>true</isSystemItem>
+    <uuid>f6c7-bfce</uuid>
    </metadata>
   </info>
- </bookmark>
- <bookmark href="file:///mnt/data/documents">
-  <title>documents</title>
+ </separator>
+ <separator>
   <info>
-   <metadata owner="http://freedesktop.org">
-    <bookmark:icon name="inode-directory"/>
-   </metadata>
    <metadata owner="http://www.kde.org">
-    <ID>1719651153/1</ID>
+    <UDI>/org/freedesktop/UDisks2/block_devices/sdd1</UDI>
+    <isSystemItem>true</isSystemItem>
+    <uuid>f8acb4b4-abd0-4cd6-9483-5d165bef0424</uuid>
    </metadata>
   </info>
- </bookmark>
- <bookmark href="file:///mnt/data/downloads">
-  <title>downloads</title>
-  <info>
-   <metadata owner="http://freedesktop.org">
-    <bookmark:icon name="inode-directory"/>
-   </metadata>
-   <metadata owner="http://www.kde.org">
-    <ID>1719651155/2</ID>
-   </metadata>
-  </info>
- </bookmark>
- <bookmark href="file:///mnt/data/iso">
-  <title>iso</title>
-  <info>
-   <metadata owner="http://freedesktop.org">
-    <bookmark:icon name="inode-directory"/>
-   </metadata>
-   <metadata owner="http://www.kde.org">
-    <ID>1719651157/3</ID>
-   </metadata>
-  </info>
- </bookmark>
- <bookmark href="file:///mnt/data/projeler">
-  <title>projeler</title>
-  <info>
-   <metadata owner="http://freedesktop.org">
-    <bookmark:icon name="inode-directory"/>
-   </metadata>
-   <metadata owner="http://www.kde.org">
-    <ID>1719651160/4</ID>
-   </metadata>
-  </info>
- </bookmark>
- <bookmark href="file:///mnt/data/works">
-  <title>works</title>
-  <info>
-   <metadata owner="http://freedesktop.org">
-    <bookmark:icon name="inode-directory"/>
-   </metadata>
-   <metadata owner="http://www.kde.org">
-    <ID>1719651163/5</ID>
-   </metadata>
-  </info>
- </bookmark>
- <bookmark href="file:///mnt/data/yedekler">
-  <title>yedekler</title>
-  <info>
-   <metadata owner="http://freedesktop.org">
-    <bookmark:icon name="inode-directory"/>
-   </metadata>
-   <metadata owner="http://www.kde.org">
-    <ID>1719651168/6</ID>
-   </metadata>
-  </info>
- </bookmark>
+ </separator>
 </xbel>

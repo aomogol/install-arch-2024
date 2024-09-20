@@ -145,9 +145,10 @@ packages=(
     spotify
     aribb24
     spectacle
-    simplescreenrecorder-bin
+    simplescreenrecorder
     svgpart
     gwenview
+    yuki-iptv-bin
 
     starship
     zoxide

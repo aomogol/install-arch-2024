@@ -58,8 +58,8 @@ installed_dir=$(dirname $(readlink -f $(basename `pwd`)))
 	cp $installed_dir/settings/shell-personal/.bashrc ~/.bashrc
 	cp $installed_dir/settings/shell-personal/.bashrc-personal ~/.bashrc-personal
 	cp $installed_dir/settings/shell-personal/.bash_profile ~/.bash_profile
-	cp $installed_dir/settings/shell-personal/.aom_prompt ~/.aom_prompt
-	cp $installed_dir/settings/shell-personal/.gitconfig ~/.gitconfig
+	#cp $installed_dir/settings/shell-personal/.aom_prompt ~/.aom_prompt
+	#cp $installed_dir/settings/shell-personal/.gitconfig ~/.gitconfig
 	cp $installed_dir/settings/shell-personal/excludes.txt ~/excludes.txt
 	cp $installed_dir/settings/shell-personal/serverList.txt ~/serverList.txt
 
@@ -76,7 +76,7 @@ echo
 #The exact details of the symlink command will depend on the installation location. 
     #Most default PATH environment variable values should contain /usr/local/bin, 
         # so no further commands should be necessary.
-sudo ln -s /opt/sublime_text/sublime_text /usr/local/bin/subl
+#sudo ln -s /opt/sublime_text/sublime_text /usr/local/bin/subl
 
 ## set your EDITOR environment variable:
     # export EDITOR='subl -w'

@@ -19,8 +19,6 @@ packages=(
     sublime-text-4
     github-cli
     github-desktop-bin
-    docker
-    docker-compose
 
     )
 
