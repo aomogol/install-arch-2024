@@ -97,7 +97,7 @@ fi
 echo "Tüm işlemler başarıyla tamamlandı!"
 echo "Lütfen GitHub veya GitLab hesabınıza SSH anahtarını eklemeyi unutmayın."
 echo "Kopyalanan genel anahtarı hesap ayarlarınızdaki 'SSH and GPG keys' bölümüne ekleyin."
-echo "zzxzxzxzxz"
+
 
 
 # GitHub veya GitLab hesabınıza SSH anahtarını ekleme:

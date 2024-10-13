@@ -22,7 +22,7 @@ if 	lsblk -f | grep btrfs > /dev/null 2>&1 ; then
 	yay -S --needed --noconfirm grub-btrfs
 	yay -S --needed --noconfirm btrfs-assistant
 	yay -S --needed --noconfirm snap-pac
-	yay -S --needed --noconfirm snapper-support
+	#yay -S --needed --noconfirm snapper-support
 	#yay -S --needed --noconfirm btrfsmaintenance
 
 	echo "################################################################"

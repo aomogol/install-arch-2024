@@ -24,12 +24,14 @@ sudo usermod -aG users,power,lp,adm,audio,video,optical,storage,network,rfkill $
     tput sgr0
 sudo reflector --latest 10  --fastest 10 --sort rate --protocol http,https --save /etc/pacman.d/mirrorlist
 
-# rate- mirrors
-# export TMPFILE="$(mktemp)"; \
-    # sudo true; \
-    # rate-mirrors --save=$TMPFILE arch --max-delay=43200 \
-    # && sudo mv /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist-backup \
-    # && sudo mv $TMPFILE /etc/pacman.d/mirrorlist
+function rtaom(){
+	export TMPFILE="$(mktemp)"; \
+    sudo true; \
+    rate-mirrors --save=$TMPFILE arch --max-delay=43200 \
+      && sudo mv /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist-backup \
+      && sudo mv $TMPFILE /etc/pacman.d/mirrorlist
+}
+
 
     echo
     tput setaf 3
@@ -47,8 +49,8 @@ sudo reflector --latest 10  --fastest 10 --sort rate --protocol http,https --sav
 # ------------------------------------------------------
 ### services enable
 # ------------------------------------------------------
-# sudo systemctl enable --now avahi-daemon.service
-# sudo systemctl enable bluetooth
+sudo systemctl enable --now avahi-daemon.service
+# sudo systemctl enable --now bluetooth
 
 
 echo "################### Personal settings to install - "
@@ -64,14 +66,14 @@ installed_dir=$(dirname $(readlink -f $(basename `pwd`)))
 	cp $installed_dir/settings/shell-personal/serverList.txt ~/serverList.txt
 
 
-#                                                       ### Switch to ZSH
+## ## Switch to ZSH
 #sudo chsh $USER -s /bin/zsh
 #sudo usermod -s /bin/zsh $USER
 
 echo
 #echo "################### Personal settings to install - "
 
-echo "Sublime text settings"
+#echo "Sublime text settings"
 echo
 #The exact details of the symlink command will depend on the installation location. 
     #Most default PATH environment variable values should contain /usr/local/bin, 
@@ -84,5 +86,5 @@ echo
 
 #[ -d $HOME"/.config/sublime-text/Packages/User" ] || mkdir -p $HOME"/.config/sublime-text/Packages/User"
 #cp  $installed_dir/settings/sublimetext/Preferences.sublime-settings $HOME/.config/sublime-text/Packages/User/Preferences.sublime-settings
-echo "Sublime text settings done"
+#echo "Sublime text settings done"
 

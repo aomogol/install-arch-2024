@@ -1,0 +1,9 @@
+[core]
+	sshCommand = ssh -i ~/.ssh/id_ed25519
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+[user]
+	name = aomogol
+	email = aomogol@gmail.com
+[url "git@gitlab.com:"]
+	insteadOf = https://gitlab.com/

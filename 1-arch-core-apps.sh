@@ -28,6 +28,7 @@ echo ""
 # ------------------------------------------------------
 # Pacman.conf file
 # ------------------------------------------------------
+figlet "Pacman"
 echo "########## /etc/pacman.conf >>  color & paralel download"
 # sudo nano /etc/pacman.conf
 echo "Pacman parallel downloads set to 20"
@@ -131,7 +132,6 @@ packages=(
     dnsdiag
     netplan
     
-
     grub-customizer
     update-grub
     gnome-firmware
@@ -169,6 +169,9 @@ packages=(
     meld
     github-cli 
     github-desktop-bin
+
+    gearlever
+
 )
 # ------------------------------------------------------
 # Install packages using yay
@@ -225,6 +228,7 @@ esac
 
 
 # Get the current Linux kernel version
+figlet "Kernel"
 kernel_version=$(uname -r)
 echo "Current Linux kernel version: $kernel_version"
 
@@ -240,3 +244,45 @@ echo "Kernel type: $kernel_type"
 
 # Install Linux headers package
 sudo pacman -S "${kernel_type}-headers" --noconfirm --needed
+
+# ------------------------------------------------------
+# Check for Bluetooth, install Pipewire-compatible packages and enable service if available
+# ------------------------------------------------------
+figlet "Bluetooth"
+if [[ $(lsmod | grep btusb) ]]; then
+    echo "Bluetooth hardware detected. Installing Pipewire-compatible Bluetooth packages and enabling service..."
+    
+    # Install Pipewire and Bluetooth packages
+    bluetooth_packages=(
+        pipewire
+        pipewire-pulse
+        pipewire-alsa
+        pipewire-jack
+        wireplumber
+        bluez
+        bluez-utils
+        blueman
+    )
+    
+    for package in "${bluetooth_packages[@]}"; do
+        if ! yay -Qi "$package" &> /dev/null; then
+            yay -S --noconfirm --needed "$package"
+        else
+            echo "$package is already installed."
+        fi
+    done
+    
+    # Enable and start Bluetooth service
+    sudo systemctl enable --now bluetooth.service
+    
+    # Ensure Pipewire service is running
+    systemctl --user enable --now pipewire.service
+    systemctl --user enable --now pipewire-pulse.service
+    
+    echo "Pipewire and Bluetooth packages installed and services enabled."
+else
+    echo "No Bluetooth hardware detected. Skipping Bluetooth setup."
+fi
+
+
+figlet "DONE.... REBOOT"
