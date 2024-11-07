@@ -16,7 +16,7 @@ export PAGER='most'
 
 # Expand the history size
 export HISTFILESIZE=10000
-export HISTSIZE=500
+export HISTSIZE=1500
 
 # Don't put duplicate lines in the history and do not add lines that start with a space
 export HISTCONTROL=erasedups:ignoredups:ignorespace
@@ -218,6 +218,23 @@ alias sysfail="systemctl --state=failed --all"
 
 alias dmesg='dmesg --color=always'
 
+
+alias gcl="git clone"
+
+alias 5dk='journalctl --since "5 minutes ago" -p err'
+alias 10dk='journalctl --since "10 minutes ago" -p err'
+
+alias 5dklog='journalctl --since "5 minutes ago"'
+alias app-err='journalctl --since "5 minutes ago" -u %1 -p err'
+
+alias dm50='sudo dmesg -T | tail -n 50'
+
+alias dnshiz='dnseval -t A -f serverList.txt -c10 google.com'
+alias liste='nano $(fzf -m --preview="bat --color=always {}")'
+alias one='onefetch'
+
+
+
 ## Functions _________________________________
 # # ex = EXtractor for all kinds of archives
 # # usage: ex <file>
@@ -304,11 +321,38 @@ netinfo ()
 	echo "---------------------------------------------------"
 }
 
+function fkill() {
+  ps aux | fzf --height 40% --layout=reverse --prompt="Select process to kill: " | awk '{print $2}' | xargs -r sudo kill
+}
+
+function logg() {
+    git lg | fzf --ansi --no-sort \
+        --preview 'echo {} | grep -o "[a-f0-9]\{7\}" | head -1 | xargs -I % git show % --color=always' \
+        --preview-window=right:50%:wrap --height 100% \
+        --bind 'enter:execute(echo {} | grep -o "[a-f0-9]\{7\}" | head -1 | xargs -I % sh -c "git show % | nvim -c \"setlocal buftype=nofile bufhidden=wipe noswapfile nowrap\" -c \"nnoremap <buffer> q :q!<CR>\" -")' \
+        --bind 'ctrl-e:execute(echo {} | grep -o "[a-f0-9]\{7\}" | head -1 | xargs -I % sh -c "gh browse %")'
+}
+
+function repo() {
+  export repo=$(fd . ${HOME}/dev --type=directory --max-depth=1 --color always| awk -F "/" '{print $5}' | fzf --ansi --preview 'onefetch /home/decoder/dev/{1}' --preview-window up)
+    if [[ -z "$repo" ]]; then
+        echo "Repository not found"
+      else
+        echo "Repository found locally, entering"
+        cd ${HOME}/dev/$repo
+        if [[ -d .git ]]; then
+          echo "Fetching origin"
+          git fetch origin
+          onefetch
+        fi
+          create_tmux_session "${HOME}/dev/$repo"
+    fi
+}
 
 alias dnshiz='dnseval -t A -f serverList.txt -c10 google.com'
-alias inv='nano $(fzf -m --preview="bat --color=always {}")'
+alias liste='nano $(fzf -m --preview="bat --color=always {}")'
 
-## Functions _________________________________
+## Functions ends_________________________________
 
 
 ### alias from AOM ###############

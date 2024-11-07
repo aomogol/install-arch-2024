@@ -19,7 +19,7 @@ echo
 # hwinfo: Donanım bilgilerini almak için araç
 # linux-firmware-qlogic: QLogic ağ kartları için firmware
 # hw-probe: Donanım ve yazılım bilgilerini toplamak ve teşhis etmek için araç
-yay -S --noconfirm --needed upd72020x-fw wd719x-firmware aic94xx-firmware lshw hwinfo linux-firmware-qlogic 
+yay -S --noconfirm --needed upd72020x-fw wd719x-firmware aic94xx-firmware lshw hwinfo linux-firmware-qlogic ast-firmware
 
 ## hw-probe
 ###############################################################################
