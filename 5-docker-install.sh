@@ -56,8 +56,6 @@ done
 #sudo groupadd docker
 #newgrp docker
 
-figlet "DOCKER "
-
 sudo usermod -aG docker $USER
 sudo systemctl enable docker.service
 sudo systemctl start docker.service
@@ -66,3 +64,5 @@ sudo systemctl start containerd.service
 sudo chmod 666 /var/run/docker.sock
 #docker run hello-world
 docker ps -a
+
+figlet "DOCKER ... Done..."

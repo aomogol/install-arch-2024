@@ -6,7 +6,7 @@ set -e
 
 
 echo -e "${GREEN}"
-    figlet "Install DOCKER Packages"
+    figlet "Development Tools"
 echo -e "${NONE}"
 
 # ------------------------------------------------------

@@ -351,7 +351,7 @@ function repo() {
 
 alias dnshiz='dnseval -t A -f serverList.txt -c10 google.com'
 alias liste='nano $(fzf -m --preview="bat --color=always {}")'
-
+alias enbuyuk='find . -type f -exec du -h {} + | sort -rh | head -n 10'
 ## Functions ends_________________________________
 
 

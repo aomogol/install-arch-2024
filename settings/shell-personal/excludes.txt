@@ -18,6 +18,10 @@
 .local/share/digikam/
 iso
 .local/share/waydroid/
+.cursor-tutor
+
+.config/google-chrome/*/Extensions
+
 
 #Thorium Browser :
 .config/thorium/ShaderCache
@@ -26,6 +30,7 @@ iso
 .config/thorium/*/Application Cache
 .config/thorium/*/History Index *
 .config/thorium/*/Service Worker/CacheStorage
+.config/thorium/*/Service Worker//IndexedDB
 
 # ## ################################################
 
@@ -67,15 +72,15 @@ Android/Sdk
 #
 ## Add Game Folders here:
 #
-/games
-.local/share/Steam
-.var/app/com.valvesoftware.Steam/.local/share/Steam
-.steam
-/Steam
-.minecraft
-.technic
-.PlayOnLinux
-.local/share/lutris/runners/wine/
+#/games
+#.local/share/Steam
+#.var/app/com.valvesoftware.Steam/.local/share/Steam
+#.steam
+#/Steam
+#.minecraft
+#.technic
+#.PlayOnLinux
+#.local/share/lutris/runners/wine/
 #
 ## Spotify
 #.config/spotify/Users

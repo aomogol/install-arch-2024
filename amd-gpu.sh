@@ -14,7 +14,10 @@ sudo pacman -S --needed --noconfirm mesa xf86-video-amdgpu
 ## sudo pacman -S --needed --noconfirm lib32-mesa vulkan-radeon lib32-vulkan-radeon vulkan-icd-loader lib32-vulkan-icd-loader
 
 ## Xero Linux 
-yay -S --needed --noconfirm xf86-video-amdgpu libvdpau-va-gl vulkan-swrast libva-vdpau-driver libclc vulkan-radeon lib32-vulkan-radeon lib32-amdvlk amdvlk vulkan-icd-loader lib32-vulkan-icd-loader egl-wayland
+yay -S --needed --noconfirm xf86-video-amdgpu libvdpau-va-gl vulkan-swrast 
+yay -S --needed --noconfirm libva-vdpau-driver libclc vulkan-radeon 
+yay -S --needed --noconfirm lib32-vulkan-radeon lib32-amdvlk amdvlk vulkan-icd-loader lib32-vulkan-icd-loader 
+yay -S --needed --noconfirm egl-wayland
 
 sudo mkinitcpio -P
 
@@ -25,15 +28,29 @@ sudo mkinitcpio -P
 ### Wine's dependencies 
 ## https://github.com/lutris/docs/blob/master/WineDependencies.md#archantergosmanjaroother-arch-derivatives
 
-sudo pacman -S --needed --noconfirm wine giflib lib32-giflib libpng lib32-libpng libldap lib32-libldap gnutls lib32-gnutls mpg123 lib32-mpg123 openal lib32-openal v4l-utils lib32-v4l-utils libpulse lib32-libpulse libgpg-error lib32-libgpg-error alsa-plugins lib32-alsa-plugins alsa-lib lib32-alsa-lib libjpeg-turbo lib32-libjpeg-turbo sqlite lib32-sqlite libxcomposite lib32-libxcomposite libxinerama lib32-libgcrypt libgcrypt lib32-libxinerama ncurses lib32-ncurses ocl-icd lib32-ocl-icd libxslt lib32-libxslt libva lib32-libva gtk3 lib32-gtk3 gst-plugins-base-libs lib32-gst-plugins-base-libs vulkan-icd-loader lib32-vulkan-icd-loader
+sudo pacman -S --needed --noconfirm wine giflib lib32-giflib libpng 
+sudo pacman -S --needed --noconfirm lib32-libpng libldap lib32-libldap 
+sudo pacman -S --needed --noconfirm gnutls lib32-gnutls mpg123 lib32-mpg123 
+sudo pacman -S --needed --noconfirm openal lib32-openal v4l-utils lib32-v4l-utils 
+sudo pacman -S --needed --noconfirm libpulse lib32-libpulse libgpg-error lib32-libgpg-error 
+sudo pacman -S --needed --noconfirm alsa-plugins lib32-alsa-plugins alsa-lib 
+sudo pacman -S --needed --noconfirm lib32-alsa-lib libjpeg-turbo lib32-libjpeg-turbo 
+sudo pacman -S --needed --noconfirm sqlite lib32-sqlite libxcomposite lib32-libxcomposite 
+sudo pacman -S --needed --noconfirm libxinerama lib32-libgcrypt libgcrypt lib32-libxinerama 
+sudo pacman -S --needed --noconfirm ncurses lib32-ncurses ocl-icd lib32-ocl-icd libxslt 
+sudo pacman -S --needed --noconfirm lib32-libxslt libva lib32-libva 
+sudo pacman -S --needed --noconfirm gtk3 lib32-gtk3 gst-plugins-base-libs lib32-gst-plugins-base-libs 
+sudo pacman -S --needed --noconfirm vulkan-icd-loader lib32-vulkan-icd-loader
 
 ### wine-staging  kullanılmıyor artık bakılacak
 
-yay -S --needed gamemode gvfs innoextract lib32-gamemod lib32-vkd3d python-protobuf vkd3d vulkan-tools winetricks protontricks
+yay -S --needed --noconfirm gamemode gvfs innoextract lib32-gamemode 
+yay -S --needed --noconfirm lib32-vkd3d python-protobuf vkd3d vulkan-tools
+yay -S --needed --noconfirm winetricks protontricks
 
 
-sudo pacman -S steam
-sudo pacman -S lutris
+sudo pacman -S --needed --noconfirm steam
+sudo pacman -S --needed --noconfirm lutris
 
 
 ## Proton GE Custom

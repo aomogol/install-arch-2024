@@ -22,7 +22,7 @@ sudo usermod -aG users,power,lp,adm,audio,video,optical,storage,network,rfkill $
     echo "###############################################################################"
     echo
     tput sgr0
-sudo reflector --latest 10  --fastest 10 --sort rate --protocol http,https --save /etc/pacman.d/mirrorlist
+#sudo reflector --latest 10  --fastest 10 --sort rate --protocol http,https --save /etc/pacman.d/mirrorlist
 
 function rtaom(){
 	export TMPFILE="$(mktemp)"; \
@@ -32,6 +32,8 @@ function rtaom(){
       && sudo mv $TMPFILE /etc/pacman.d/mirrorlist
 }
 
+#figlet "Mirrorlist"
+rtaom
 
     echo
     tput setaf 3
@@ -49,7 +51,7 @@ function rtaom(){
 # ------------------------------------------------------
 ### services enable
 # ------------------------------------------------------
-sudo systemctl enable --now avahi-daemon.service
+# sudo systemctl enable --now avahi-daemon.service
 # sudo systemctl enable --now bluetooth
 
 

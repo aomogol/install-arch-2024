@@ -1,5 +1,6 @@
-#!/bin/bash
-set -e
+#!/bin/bash 
+set -e 
+
 #######################################################
 # Author    : Ahmet Önder Moğol
 #######################################################
@@ -12,7 +13,7 @@ echo -e "${GREEN}"
     figlet "yay"
 echo -e "${NONE}"
 if sudo pacman -Qs yay > /dev/null ; then
-    echo ":: yay is already installed!"
+    echo ":: yay is already installed!" 
 else
     echo ":: yay is not installed. Starting the installation!"
     SCRIPT=$(realpath "$0")
@@ -22,7 +23,8 @@ else
     cd ~/yay-bin
     makepkg -si
     cd $temp_path
-    echo ":: yay has been installed successfully."
+    echo " yay has been installed successfully."
+    echo ":: "
 fi
 echo ""
 # ------------------------------------------------------
@@ -171,7 +173,25 @@ packages=(
     github-desktop-bin
 
     gearlever
-
+    stow
+    neohtop
+    ipscan
+    onefetch
+    lm_sensors
+    diskmonitor
+    youtube-music-bin
+    zerotier-one
+    obsidian
+    grsync
+    linutil-bin
+    hugo
+    remmina
+    remmina-plugin-folder
+    remmina-plugin-rdesktop
+    freerdp
+    xrdp
+    hfsutils
+    exfat-utils
 )
 # ------------------------------------------------------
 # Install packages using yay
@@ -266,7 +286,7 @@ if [[ $(lsmod | grep btusb) ]]; then
     
     for package in "${bluetooth_packages[@]}"; do
         if ! yay -Qi "$package" &> /dev/null; then
-            yay -S --noconfirm --needed "$package"
+            yay -S  --needed "$package"
         else
             echo "$package is already installed."
         fi
