@@ -62,8 +62,8 @@ installed_dir=$(dirname $(readlink -f $(basename `pwd`)))
 	cp $installed_dir/settings/shell-personal/.bashrc ~/.bashrc
 	cp $installed_dir/settings/shell-personal/.bashrc-personal ~/.bashrc-personal
 	cp $installed_dir/settings/shell-personal/.bash_profile ~/.bash_profile
-	#cp $installed_dir/settings/shell-personal/.aom_prompt ~/.aom_prompt
-	#cp $installed_dir/settings/shell-personal/.gitconfig ~/.gitconfig
+	cp $installed_dir/settings/shell-personal/.aom_prompt ~/.aom_prompt
+	cp $installed_dir/settings/shell-personal/.gitconfig ~/.gitconfig
 	cp $installed_dir/settings/shell-personal/excludes.txt ~/excludes.txt
 	cp $installed_dir/settings/shell-personal/serverList.txt ~/serverList.txt
 

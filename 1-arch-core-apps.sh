@@ -1,6 +1,5 @@
-#!/bin/bash 
-set -e 
-
+#!/bin/bash
+set -e
 #######################################################
 # Author    : Ahmet Önder Moğol
 #######################################################
@@ -13,7 +12,7 @@ echo -e "${GREEN}"
     figlet "yay"
 echo -e "${NONE}"
 if sudo pacman -Qs yay > /dev/null ; then
-    echo ":: yay is already installed!" 
+    echo ":: yay is already installed!"
 else
     echo ":: yay is not installed. Starting the installation!"
     SCRIPT=$(realpath "$0")
@@ -23,8 +22,7 @@ else
     cd ~/yay-bin
     makepkg -si
     cd $temp_path
-    echo " yay has been installed successfully."
-    echo ":: "
+    echo ":: yay has been installed successfully."
 fi
 echo ""
 # ------------------------------------------------------
@@ -73,7 +71,7 @@ packages=(
     btop
     htop
 
-    paru-bin
+    #paru-bin
     pkgcacheclean
     pacman-contrib
     reflector
@@ -100,6 +98,7 @@ packages=(
     kdegraphics-thumbnailers
     poppler-glib
     gdk-pixbuf2
+    plocate
 
     ttf-meslo-nerd
     ttf-meslo-nerd-font-powerlevel10k
